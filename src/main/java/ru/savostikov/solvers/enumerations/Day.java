@@ -1,7 +1,8 @@
 package ru.savostikov.solvers.enumerations;
 
 public enum Day {
-    ONE(1);
+    ONE(1),
+    TWO(2);
 
     private final int dayValue;
 
