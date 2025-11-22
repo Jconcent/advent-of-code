@@ -13,6 +13,7 @@ public class AdventOfCodeApp {
         var day2Part2 = new ru.savostikov.solvers.years.fifteen.day2.Part2();
 
         var day3Part1 = new ru.savostikov.solvers.years.fifteen.day3.Part1();
+        var day3Part2 = new ru.savostikov.solvers.years.fifteen.day3.Part2();
 
         day1Part1.solvePuzzle();
         day1Part2.solvePuzzle();
@@ -21,5 +22,6 @@ public class AdventOfCodeApp {
         day2Part2.solvePuzzle();
 
         day3Part1.solvePuzzle();
+        day3Part2.solvePuzzle();
     }
 }
