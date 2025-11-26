@@ -1,4 +1,4 @@
-package ru.savostikov.solvers.enumerations;
+package ru.savostikov.advent.enumerations;
 
 public enum Year {
     TWO_K_FIFTEEN(2015);
