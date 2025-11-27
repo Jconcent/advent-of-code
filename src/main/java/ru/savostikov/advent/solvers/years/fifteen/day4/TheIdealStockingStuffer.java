@@ -8,7 +8,7 @@ import ru.savostikov.advent.solvers.PuzzleSolver;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
-@AdventPuzzle(year = Year.TWO_K_FIFTEEN, day = Day.FOUR)
+@AdventPuzzle(year = Year.TWO_K_FIFTEEN, day = Day.FOUR, skip = true)
 public class TheIdealStockingStuffer {
 
     public static class Part1 implements PuzzleSolver {

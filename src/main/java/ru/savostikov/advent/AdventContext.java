@@ -35,13 +35,17 @@ public class AdventContext {
                 puzzleSolverClass.getAnnotation(AdventPuzzle.class);
 
         if (Objects.nonNull(puzzleMetadata)) {
-            PuzzlePart part = PuzzlePart.valueOfByPartName(puzzleSolverClass.getSimpleName());
-            SolverUtility.printResult(
-                    puzzleMetadata.year(),
-                    puzzleMetadata.day(),
-                    part,
-                    solver.solve(SolverUtility.readInputAsString(puzzleMetadata.year(), puzzleMetadata.day(), part))
-            );
+            if (puzzleMetadata.skip()) {
+                System.out.println("Пропускаем класс " + puzzleSolverClass.getCanonicalName());
+            } else {
+                PuzzlePart part = PuzzlePart.valueOfByPartName(puzzleSolverClass.getSimpleName());
+                SolverUtility.printResult(
+                        puzzleMetadata.year(),
+                        puzzleMetadata.day(),
+                        part,
+                        solver.solve(SolverUtility.readInputAsString(puzzleMetadata.year(), puzzleMetadata.day(), part))
+                );
+            }
         } else {
             System.out.printf("Для класса %s нет мета-информации. Игнорируем", puzzleSolverClass.getCanonicalName());
         }

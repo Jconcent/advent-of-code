@@ -13,4 +13,5 @@ import java.lang.annotation.Target;
 public @interface AdventPuzzle {
     Year year() default Year.TWO_K_FIFTEEN;
     Day day() default Day.ONE;
+    boolean skip() default false;
 }
