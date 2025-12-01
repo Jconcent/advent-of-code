@@ -24,8 +24,6 @@ public class DoesntHeHaveInternElvesForThis {
             for (String targetLine : inputLines) {
                 if (isStringNice(targetLine.toCharArray())) {
                     niceStringCount++;
-                } else {
-                    System.out.println(targetLine);
                 }
             }
             return niceStringCount;
