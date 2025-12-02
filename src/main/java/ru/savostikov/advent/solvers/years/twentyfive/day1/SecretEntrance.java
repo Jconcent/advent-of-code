@@ -46,7 +46,7 @@ public class SecretEntrance {
                     after = -after;
                 }
 
-                zeroPosCount += Math.abs(Math.floorDiv(-after, 100) - Math.floorDiv(-before, 100));
+                zeroPosCount += Math.abs(Math.floorDiv(after, 100) - Math.floorDiv(before, 100));
             }
             return zeroPosCount;
         }
