@@ -6,7 +6,8 @@ public enum Day {
     THREE(3),
     FOUR(4),
     FIVE(5),
-    SIX(6);
+    SIX(6),
+    SEVEN(7);
 
     private final int dayValue;
 
