@@ -7,7 +7,7 @@ import ru.savostikov.advent.solvers.PuzzleSolver;
 
 import java.util.*;
 
-@AdventPuzzle(year = Year.TWO_K_TWENTY_FIVE, day = Day.TEN)
+@AdventPuzzle(year = Year.TWO_K_TWENTY_FIVE, day = Day.TEN, skip = true)
 public class Factory {
 
     public static class Part1 implements PuzzleSolver {
